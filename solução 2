@@ -1,0 +1,13 @@
+//Crie um Slice de inteiros com os valores 1, 2, 3, 4 e 5. Remova o terceiro elemento e imprima o Slice resultante
+
+
+package main
+
+import "fmt"
+
+func main() {
+    numeros := []int{1, 2, 3, 4, 5}
+    numeros = append(numeros[:3], numeros[4:]...)
+    fmt.Println(numeros) 
+}
+(acho que o terceiro elemento é o numero "4")
