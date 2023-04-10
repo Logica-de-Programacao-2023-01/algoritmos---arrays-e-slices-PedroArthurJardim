@@ -1,0 +1,13 @@
+//Crie um Array de floats com 4 elementos e calcule o produto dos valores armazenados no Array.
+
+
+package main
+
+import "fmt"
+
+func main() {
+    numeros := []float64{1.2, 2.8, 3.9, 4.9}
+    multiplicação := numeros[0]*numeros[1]*numeros[2]*numeros[3]
+    
+  fmt.Println("A multiplicação dos numeros é: ", multiplicação) 
+}
