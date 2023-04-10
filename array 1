@@ -1,0 +1,13 @@
+//Crie um Array de inteiros com 3 elementos e imprima a soma dos valores armazenados no Array.
+
+
+package main
+
+import "fmt"
+
+func main() {
+  array := [3]int{20,30,50}
+  soma := array[0]+array[1]+array[2]
+
+  fmt.Print("A soma dos valores é: ", soma)
+  }
