@@ -1,9 +1,0 @@
-cd respos/  se n existir, crie com mkdir repos
-git clone e usa um link
-cd algoritimos e usa tab
-nano.algoritimo1.txt
--- para salvar, ctrl X, Y, Enter
-ls
-git add algoritimo1.txt
-git commit -m "solução"
-git push
