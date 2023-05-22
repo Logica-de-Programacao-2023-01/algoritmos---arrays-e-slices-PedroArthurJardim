@@ -1,0 +1,16 @@
+//Crie um Array de floats com 6 elementos. Solicite ao usuário que informe um número que será adicionado em todas as posições do Array. Imprima o Array resultante.
+
+package main
+
+import "fmt"
+
+func main() {
+	var numerodigitado float64
+	array := [6]float64{}
+	fmt.Print("digite um numero para ser adicionado ")
+	fmt.Scan(&numerodigitado)
+	for i := range array {
+		array[i] = numerodigitado
+	}
+	fmt.Print(array)
+}
