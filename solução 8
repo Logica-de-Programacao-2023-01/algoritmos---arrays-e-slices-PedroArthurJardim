@@ -1,0 +1,27 @@
+//Crie um Slice de strings com tamanho 8 e solicite ao usuário que informe um valor. Remova todas as ocorrências desse valor no Slice e imprima o resultado.
+
+package main
+
+import "fmt"
+
+func main() {
+	slice := make([]string, 8)
+	slice[0] = "a"
+	slice[1] = "b"
+	slice[2] = "c"
+	slice[3] = "d"
+	slice[4] = "e"
+	slice[5] = "f"
+	slice[6] = "g"
+	slice[7] = "h"
+	var resultado []string
+	var valor string
+	fmt.Print("Digite uma letra entre as 8 primeiras letras do alfabeto ")
+	fmt.Scan(&valor)
+	for _, x := range slice {
+		if x != valor {
+			resultado = append(resultado, x)
+		}
+	}
+	fmt.Println(resultado)
+}
