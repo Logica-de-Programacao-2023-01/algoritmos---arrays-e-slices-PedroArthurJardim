@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+
+func main() {
+	//Variaveis
+	array := [7]int{0, 0, 0, 0, 0, 0, 0}
+	var primeiraCasa int
+	var ultimaCasa int
+
+
+	fmt.Println("Qual numero deve ser adicionado na primeira casa?")
+	fmt.Scan(&primeiraCasa)
+	fmt.Println("Qual numero deve ser adicionado na ultima casa?")
+	fmt.Scan(&ultimaCasa)
+
+	
+	array[0] = primeiraCasa
+	array[6] = ultimaCasa
+
+	
+	fmt.Println(array)
